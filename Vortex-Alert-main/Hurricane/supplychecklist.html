@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Supply Checklist</title>
+    <link rel="stylesheet" href="stylesc.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Supply Checklist</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dangerzones.html">Danger Zones</a>
+        <a href="sheltertracker.html">Shelter Tracker</a>
+        <a href="hurricanetracker.html">Hurricane Tracker</a>
+        <a href="emergencycontacts.html">Emergency Contacts</a>
+    </nav>
+    <div class="background">
+    <div class="container">
+        <button onclick="createCheckbox()">Make more rows</button> 
+    </div>
+        <br><br>
+        
+        <img src="supplychecklistpart4.png" width="800px">
+        <input type="checkbox"><input type="text"> 
+        <br>
+        <input type="checkbox"><input type="text"> 
+        <br>
+        <input type="checkbox"><input type="text"> 
+        <br>
+        <input type="checkbox"><input type="text"> 
+        <br>
+        <input type="checkbox"><input type="text"> 
+        <br>
+
+        
+       
+
+    <script>
+        function createCheckbox() {
+
+            var inputElement = document.createElement("input");
+    
+            inputElement.type = "checkbox";
+    
+            document.body.appendChild(inputElement);
+
+            var inputElement = document.createElement("input");
+
+            inputElement.type = "text";
+
+            document.body.appendChild(inputElement);
+
+            var brElement = document.createElement("br");
+
+            document.body.appendChild(brElement);
+
+        }
+  
+    
+    </script>
+    </div>
+
+</body>
+</html>
